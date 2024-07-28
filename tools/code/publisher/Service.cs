@@ -24,7 +24,7 @@ internal static class Service
         await ProductGroup.ProcessDeletedArtifacts(files, configurationJson, serviceDirectory, serviceUri, listRestResources, putRestResource, deleteRestResource, logger, cancellationToken);
         await ProductPolicy.ProcessDeletedArtifacts(files, serviceDirectory, serviceUri, deleteRestResource, logger, cancellationToken);
         await Product.ProcessDeletedArtifacts(files, serviceDirectory, serviceUri, deleteRestResource, logger, cancellationToken);
-        await ServicePolicy.ProcessDeletedArtifacts(files, serviceDirectory, serviceUri, deleteRestResource, logger, cancellationToken);
+        // await ServicePolicy.ProcessDeletedArtifacts(files, serviceDirectory, serviceUri, deleteRestResource, logger, cancellationToken);
         await PolicyFragment.ProcessDeletedArtifacts(files, configurationJson, serviceDirectory, serviceUri, putRestResource, deleteRestResource, logger, cancellationToken);
         await Diagnostic.ProcessDeletedArtifacts(files, serviceDirectory, serviceUri, deleteRestResource, logger, cancellationToken);
         await Logger.ProcessDeletedArtifacts(files, serviceDirectory, serviceUri, deleteRestResource, logger, cancellationToken);
